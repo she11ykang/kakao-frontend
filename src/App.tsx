@@ -7,6 +7,7 @@ import "./App.css";
 import { KeyboardEvent } from "react";
 //import { useState, MouseEvent } from "react";
 import TodoList from "./TodoList";
+import Test from "./pages/Test";
 
 const App = () => {
   //const welcomeText = "Hello World!";
@@ -17,6 +18,7 @@ const App = () => {
       event.stopPropagation();
     }
   };
+
   return (
     <>
       <div className="App">
@@ -33,6 +35,7 @@ const App = () => {
       />
       <input type="text" onKeyDown={preventKeyDown} />
       <TodoList />
+      <Test />
       {/* <input
         type="text"
         onKeyDown={(event: KeyboardEvent<HTMLInputElement>) => {
